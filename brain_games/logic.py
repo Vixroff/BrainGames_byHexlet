@@ -7,7 +7,7 @@ def play_round(question, correct_answer):
     answer = prompt.string('Your answer: ')
     if correct_answer == answer:
         print('Correct!')
-        return True 
+        return True
     else:
         print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}")
         return False
@@ -24,4 +24,3 @@ def play_game(game):
         else:
             count = 0
     print(f'Congratulations, {name}')
-

@@ -15,6 +15,3 @@ def game_task():
     question = random.randint(1, 30)
     correct_answer = str(is_even(question))
     return question, correct_answer
-
-
-
