@@ -9,7 +9,8 @@ def play_round(question, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}")
+        print(f"{answer} is wrong answer ;(. \
+Correct answer was {correct_answer}")
         return False
 
 
@@ -22,5 +23,7 @@ def play_game(game):
         if play_round(question, correct_answer):
             count += 1
         else:
-            count = 0
-    print(f'Congratulations, {name}')
+            print(f"Let's try again, {name}!")
+            break
+    else:
+        print(f'Congratulations, {name}!')

@@ -1,19 +1,32 @@
 install:
-	poetry install
-
-brain-games:
-	poetry run brain-games
+		poetry install
 
 build:
-	poetry build
+		poetry build
 
 publish:
-	poetry publish --dry-run
+		poetry publish --dry-run
 
 packadge-install:
-	python3 -m pip install --user dist/*.whl
+		python3 -m pip install --user dist/*.whl
 
 lint:
-	poetry run flake8 brain_games
+		poetry run flake8 brain_games
 
-.PHONY: install test lint selfcheck check build
+brain-games:
+		poetry run brain-games
+
+brain-even:
+		poetry run brain-even
+
+brain-calc:
+		poetry run brain-calc
+
+brain-gcd:
+		poetry run brain-gcd
+
+brain-progression:
+		poetry run brain-progression
+
+brain-prime:
+		poetry run brain-prime
